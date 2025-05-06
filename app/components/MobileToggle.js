@@ -25,15 +25,15 @@ export default function MobileToggle() {
   const toggleMobile = () => {
     setIsMobile(!isMobile);
     // Update the Spline scene view
-    const splineView = document.querySelector('.spline-view');
-    if (splineView) {
+    const canvas = document.querySelector('canvas');
+    if (canvas) {
       if (!isMobile) {
         // Mobile view: zoom in and center
-        splineView.style.transform = 'scale(1.2) translateY(10%)';
-        splineView.style.transformOrigin = 'center top';
+        canvas.style.transform = 'scale(1.2) translateY(10%)';
+        canvas.style.transformOrigin = 'center top';
       } else {
         // Desktop view: reset
-        splineView.style.transform = 'none';
+        canvas.style.transform = 'none';
       }
     }
   };
