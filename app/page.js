@@ -22,8 +22,9 @@ export default function Home() {
 
   return (
     <main style={{ width: "100vw", height: "100vh", overflow: "hidden" }}>
-      <Spline
-        scene="loading..." 
+      <Spline 
+        className="spline-view" 
+        scene="https://prod.spline.design/IHC6c9SdAQVPKaEp/scene.splinecode" 
       />
       <MobileToggle />
       <ScrollButtons onScroll={triggerSplineScroll} />
